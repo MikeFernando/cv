@@ -64,19 +64,22 @@
   
   .links{
     display: flex;
-    gap: 80px;
-    margin-top: 2rem;
-    margin-left: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-left: 5.1875rem;
   }
-  .links p {
-    color: black;
-    font-size: 14px;
-  }
-  .links a {
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-  }
+.links p {
+  color: #606060;
+  font-size: 18px;
+  margin-top: 0.4rem;
+}
+
+.links span {
+  color: #383737;
+  font-size: 16px;
+  margin-top: 0.4rem;
+}
   
   main {
     margin-left: 83px;
