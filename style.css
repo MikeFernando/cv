@@ -20,8 +20,8 @@
   }
   
   ul li {
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 0.9375rem;
+    margin-top: 0.3125rem;
     line-height: 1.5;
     color: #383737;
   }
@@ -49,12 +49,12 @@
     margin-top: 5rem;
   }
   .title img {
-    width: 60px;
-    height: 18px;
+    width: 3.75rem;
+    height: 1.125rem;
   }
   .title h1 {
     color: #606060;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-left: 24px;
     margin-bottom: 0;
     font-weight: 400;
@@ -71,24 +71,23 @@
   }
 .links p {
   color: #606060;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-top: 0.4rem;
 }
 
 .links span {
   color: #383737;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 0.4rem;
 }
   
   main {
-    margin-left: 83px;
     padding-bottom: 5rem;
   }
   
   .title-section {
     color: #606060;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-top: 3rem;
     margin-bottom: 0;
     font-weight: 400;
@@ -97,16 +96,62 @@
   }
   
   main p {
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 0.9375rem;
+    margin-top: 0.3125rem;
     line-height: 1.5;
     color: #383737;
     max-width: 47.125rem;
   }
   
   main strong {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #8f8f8f;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+  }
+
+  @media(max-width: 768px) {
+    html {
+      font-size: 0.875rem;
+    }
+    main {
+      margin: 0;
+      padding: 0 0.625rem;
+    }
+    .links {
+      margin: 0 0.625rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: baseline;
+    }
+
+    .links p {
+      font-size: 14px;
+    }
+
+    .links span {
+      font-size: 14px;
+    }
+
+    .title img {
+      padding-left: 10px;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+    }
+    .title h1 {
+      margin-left: 0;
+      padding: 0 0.625rem;
+      font-size: 1.375rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    main {
+      margin-left: 5.1875rem;
+    }
   }
